@@ -368,8 +368,8 @@ __help__ = """
 *Admin only:*
  - /antiscam <on/off/yes/no>: Will disable antispam security in group, or return your current settings.
 
-Antispam are used by the bot owners to ban scammers across all groups. This helps protect \
-you and your groups by removing scammers as quickly as possible. They can be disabled for you group by calling \
+Antiscam are used by the bot owners to ban scammers/spammers across all groups. This helps protect \
+you and your groups by removing scammers/spammers as quickly as possible. They can be disabled for you group by calling \
 /antiscam
 """
 
