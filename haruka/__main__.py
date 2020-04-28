@@ -22,8 +22,8 @@ from haruka.modules.connection import connected
 
 PM_START = """Hello {}, my name is {}!
 
-🤎Best Group Management Bot on Telegram🤎
-1. Enable Antiscam by /antiscam on 🚫
+Best Group Management Bot on Telegram🤎
+1. Enable Antiscam by /antispam on 🚫
 2. Lowest Ping = Fastest Bot 😝
 3.🔰 Check out many more features
 
