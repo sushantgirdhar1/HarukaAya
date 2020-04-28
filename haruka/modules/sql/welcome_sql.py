@@ -1,24 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@sushantgirdhar 
-technicalhackerz
-/
-Haruka-Aya-Clone
-1
-512
- Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security 0 Insights
-Haruka-Aya-Clone/haruka/modules/sql/welcome_sql.py /
-@ownerofworld ownerofworld Update welcome_sql.py
-c4c841c on Sep 25, 2019
-@ownerofworld@Devp73
-322 lines (236 sloc)  9.49 KB
-  
 import threading
 from typing import Union
 
@@ -27,8 +6,8 @@ from sqlalchemy import Column, String, Boolean, UnicodeText, Integer, BigInteger
 from haruka.modules.helper_funcs.msg_types import Types
 from haruka.modules.sql import SESSION, BASE
 
-DEFAULT_WELCOME = "Hey {first}, how are you?"
-DEFAULT_GOODBYE = "Nice knowing ya!"
+DEFAULT_WELCOME = "{first}, Welcome Pussy. Check my Dick ASAP 😉?"
+DEFAULT_GOODBYE = "Nikal Lawde Pheli Fursat Main Nikal 😏"
 
 
 class Welcome(BASE):
@@ -341,15 +320,3 @@ def migrate_chat(old_chat_id, new_chat_id):
                 btn.chat_id = str(new_chat_id)
 
         SESSION.commit()
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
