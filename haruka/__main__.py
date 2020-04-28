@@ -20,14 +20,11 @@ from haruka.modules.helper_funcs.misc import paginate_modules
 from haruka.modules.translations.strings import tld, tld_help 
 from haruka.modules.connection import connected
 
-PM_START = """Hello {}, my name is {}!
+PM_START = """Hello😱 {}, my name is👻 {}!
 
-Best Group Management Bot on Telegram🤎
-1. Enable Antiscam by /antispam on 🚫
-2. Lowest Ping = Fastest Bot 😝
-3.🔰 Check out many more features
+👇💥 Owner 👇💥 Contact !
+https://sushantgirdhar.github.io/
 
-Moded and Created By @sushantgirdhar
 Click /help or Help button below to find out more about how to use me to my full potential.
 """
 
