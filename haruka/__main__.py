@@ -21,12 +21,13 @@ from haruka.modules.translations.strings import tld, tld_help
 from haruka.modules.connection import connected
 
 PM_START = """Hello {}, my name is {}!
-You know how hard it is sometimes to manage group so here is the solution for you
 
-I'm group manager bot and Anti-scam bot
-Created and Moded by @sushantgirdhar
-Active Anti-scam protection in your BM by this command : 
-/antiscam on 
+🤎Best Group Management Bot on Telegram🤎
+1. Enable Antiscam by /antiscam on 🚫
+2. Lowest Ping = Fastest Bot 😝
+3.🔰 Check out many more features
+
+Moded and Created By @sushantgirdhar
 Click /help or Help button below to find out more about how to use me to my full potential.
 """
 
