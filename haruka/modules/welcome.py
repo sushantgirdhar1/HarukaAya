@@ -762,6 +762,7 @@ def __chat_settings__(bot, update, chat, chatP, user):
 
 __help__ = """
 Give your members a warm welcome with the greetings module! Or a sad goodbye... Depends!
+
 Available commands are:
  - /welcome <on/off/yes/no>: enables/disables welcome messages. If no option is given, returns the current welcome message and welcome settings. 
  - /goodbye <on/off/yes/no>: enables/disables goodbye messages. If no option is given, returns  the current goodbye message and goodbye settings.
@@ -776,7 +777,9 @@ Available commands are:
  Note: if you want to reset the mute time to be forever, use /welcomemutetime 0m. 0 == eternal!
  - /setmutetext <new text>: Customise the "click here to prove you're human" button obtained from enabling welcomemutes.
  - /resetmutetext: resets the mute button to the default text.
+
 Read /markdownhelp to learn about formatting your text and mentioning new users when the join!
+
 Fillings:
 As mentioned, you can use certain tags to fill in your welcome message with user or chat info; there are:
 {first}: The user's first name.
@@ -786,12 +789,16 @@ As mentioned, you can use certain tags to fill in your welcome message with user
 {mention}: Mentions the user, using their firstname.
 {id}: The user's id.
 {chatname}: The chat's name.
+
 An example of how to use fillings would be to set your welcome, via:
 /setwelcome Hey there {first}! Welcome to {chatname}.
+
 You can enable/disable welcome messages as such:
 /welcome off
+
 If you want to save an image, gif, or sticker, or any other data, do the following:
 /setwelcome while replying to a sticker or whatever data you'd like. This data will now be sent to welcome new users.
+
 Tip: use /welcome noformat to retrieve the unformatted welcome message.
 This will retrieve the welcome message and send it without formatting it; getting you the raw markdown, allowing you to make easy edits.
 This also works with /goodbye.
