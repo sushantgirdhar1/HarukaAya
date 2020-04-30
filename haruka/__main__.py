@@ -20,13 +20,14 @@ from haruka.modules.helper_funcs.misc import paginate_modules
 from haruka.modules.translations.strings import tld, tld_help 
 from haruka.modules.connection import connected
 
-PM_START = """ Hello CA Aspirant {}, I am {}  ! , With Best Group Management Features . 
+PM_START = """ Hello {}, I am {}  ! , 📲With Best Group Management Features . 
 
-Click Help button below to find out more about how to use me to my full potential
+⚙️Click Help button below to find out more about how to use me to my full potential Or Click /help
 
-Want to ADD me in CA groups ? Get Authorization with My Master here @sushantgirdhar!
-Well , you can visit https://sushantgirdhar.github.io/ Also.
-Don't Forget to turn On Anti-Spam by /antispam on
+Well , you can contact my master with below link 🗣
+https://sushantgirdhar.github.io/ 
+
+Also ,Don't Forget to turn On Anti-Spam by /antispam on
 """
 
 
