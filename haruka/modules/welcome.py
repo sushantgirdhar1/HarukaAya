@@ -97,7 +97,7 @@ def new_member(bot: Bot, update: Update):
                 if str(chat.id) in a_chats:
                     update.effective_message.reply_text("Hello !")
                 else:
-                    update.effective_message.reply_text("This Chat is not Authorised by My Master. Contact him to authorize the chat @sushantgirdhar .")
+                    update.effective_message.reply_text("**This Chat is not Authorized by My Master.** Contact him here to get authorization @sushantgirdhar. ")
                     bot.send_sticker(chat.id, 'CAACAgUAAx0CV16c6gACAwleqo1o4IwxMoFvUoAKepdkk-Id0QACfAEAAlHU8jNUYCseRVdVpxkE')
                     bot.leaveChat(chat.id)
 
