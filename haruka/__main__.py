@@ -27,7 +27,8 @@ PM_START = """ Hello {}, I am {}  ! , 📲With Best Group Management Features .
 Well , you can contact my master with below link 🗣
 https://sushantgirdhar.github.io/ 
 
-Also ,Don't Forget to turn On Anti-Spam by /antispam on
+Also ,Don't Forget to turn On Anti-Spam  
+👉🏻 /antispam on
 """
 
 
