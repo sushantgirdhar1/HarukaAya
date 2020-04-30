@@ -617,9 +617,9 @@ __help__ = """
 *Admin only:*
  - /antispam <on/off/yes/no>: Will disable antispam security in group, or return your current settings.
 
-Antispam are used by the bot owners to ban spammers across all groups. This helps protect \
-you and your groups by removing spam flooders as quickly as possible. They can be disabled for you group by calling \
-/antispam
+Antispam are spammers across all groups. This helps protect \
+you and your groups by removing spam flooders as quickly as possible. Bot is Connected with the spamwatch api and CAS BANs to protect Groups from arab,chinese, investment , bitcoin, Girl Harrassment or any abusive spam . \
+Also , you can report any above Ban Spammers Globallyy . Report Spammers Here @sushantgirdhar @chachaji 
 """
 
 __mod_name__ = "Antispam security"
