@@ -21,7 +21,8 @@ from haruka.modules.translations.strings import tld, tld_help
 from haruka.modules.connection import connected
 
 PM_START = """ **Sup ? {}, my name is {} !**
-'''Owner Contact''' !
+
+**Contact My Mater with below link**
 https://sushantgirdhar.github.io/
 
 **Click Help button below to find out more about how to use me to my full potential**
