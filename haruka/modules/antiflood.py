@@ -37,8 +37,7 @@ def check_flood(bot: Bot, update: Update) -> str:
 
     try:
         bot.restrict_chat_member(chat.id, user.id, can_send_messages=False)
-        msg.reply_text(tld(chat.id, "I like to leave the flooding to natural disasters. But you, you were just a "
-                       "disappointment. *Muted*!"))
+        msg.reply_text(tld(chat.id, "Muted📵 . Please wait for any admins to Unmute you ♻️ .Next Time Don't Flood . Type in One Message Instead . Keep Studying 📚"))
 
         return "<b>{}:</b>" \
                "\n#MUTED" \
