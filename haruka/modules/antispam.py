@@ -283,7 +283,7 @@ def gmute(bot: Bot, update: Update, args: List[str]):
 
         return
 
-    message.reply_text("*Gets duct tape ready* 😉")
+    message.reply_text("Wrapping a tape on him...😉")
 
     muter = update.effective_user  # type: Optional[User]
     send_to_list(bot, SUDO_USERS + SUPPORT_USERS,
@@ -617,9 +617,9 @@ __help__ = """
 *Admin only:*
  - /antispam <on/off/yes/no>: Will disable antispam security in group, or return your current settings.
 
-This helps protect \
+This helps to protect \
 you and your groups by removing spam flooders as quickly as possible. Bot is Connected with the spamwatch api and CAS BANs to protect Groups from arab,chinese, investment , bitcoin, Girl Harrassment or any abusive spam . \
-Also , you can report any above Ban Spammers Globallyy . Report Spammers Here @sushantgirdhar @chachaji 
+Also , you can report them Here @sushantgirdhar @chachaji 
 """
 
 __mod_name__ = "Antispam security"
