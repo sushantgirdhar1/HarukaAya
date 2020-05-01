@@ -27,7 +27,7 @@ def dnd(bot: Bot, update: Update):
 
     sql.set_dnd(update.effective_user.id, reason)
     fname = update.effective_user.first_name
-    update.effective_message.reply_text(tld(chat.id, f"{fname} is now on DND Mode 📵 . Studying Maybe 🤷🏻‍♀️🤷🏻‍♂️ . Do not Disturb him Please 😌📚."))
+    update.effective_message.reply_text(tld(chat.id, f"{fname} is now on DND Mode 📵 . Studying Maybe !. Do Not Disturb him Please 😌."))
 
 
 @run_async
