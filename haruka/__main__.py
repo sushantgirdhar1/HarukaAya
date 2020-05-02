@@ -24,8 +24,9 @@ PM_START = """ Hello {}, I am {}  ! , 📲With Best Group Management Features .
 
 ⚙️Click Help button below to find out more about how to use me to my full potential Or Click /help
 
-Well , you can contact my master with below link 🗣
-https://sushantgirdhar.github.io/ 
+Well , you can visit us ["HERE"](sushantgirdhar.github.io/)🗣
+
+To Add me to your group click ["HERE"](t.me/ebruiser_bot?startgroup=botstart) . Make Sure to get my [Master](telegram.dog/sushantgirdhar/) authorization first .
 
 Also ,Don't Forget to turn On Anti-Spam  
 👉🏻 /antispam on
