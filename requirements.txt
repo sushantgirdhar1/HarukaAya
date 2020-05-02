@@ -27,4 +27,3 @@ pyowm
 wikipedia
 bleach
 markdown2
-speedtest-cli
