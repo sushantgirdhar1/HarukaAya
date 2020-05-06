@@ -14,6 +14,7 @@ from typing import Optional, List
 from PyLyrics import *
 from hurry.filesize import size
 from covid import Covid
+covid = Covid(source="worldometers")
 
 import requests
 from telegram import Message, Chat, Update, Bot, MessageEntity
@@ -37,7 +38,7 @@ from haruka.modules.sql.translation import prev_locale
 from haruka.modules.translations.strings import tld
 
 from requests import get
-covid = Covid(source="worldometers")
+
 
 
 
