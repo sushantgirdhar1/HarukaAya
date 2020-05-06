@@ -18,7 +18,7 @@ from haruka.__main__ import STATS, USER_INFO
 from haruka.modules.disable import DisableAbleCommandHandler
 from haruka.modules.helper_funcs.extraction import extract_user
 
-from haruka.modules.tr_engine.strings import tld
+from haruka.modules.translation.strings import tld
 
 from requests import get
 
