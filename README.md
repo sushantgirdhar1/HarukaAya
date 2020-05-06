@@ -4,7 +4,7 @@ Dear anyone kanging my bot, At least, Don't fucking spam my private messages lea
 
 A modular Telegram Python bot running on python3 with an sqlalchemy database.
 
-Can be found on telegram as [EBRUISER-BOT](https://t.me/ebruiserbot).
+Can be found on telegram as [EBRUISER-BOT](https://t.me/ebruiser_bot).
 
 Alternatively, [find me on telegram](https://t.me/sushantgirdhar)!
 
@@ -20,4 +20,6 @@ Original Project by RealAkito [here!](https://t.me/HarukaAyaGroup)
 * AyraHikari - weather
 * Paul Larsen - marie creator, inspiration to do many things
 * FFBot - for translations functions
+* Akito - For All the things though , thug man,  Haruka Aya Bot , Evo Manager etc cant list here , He is Pro .
+
 And much more that we couldn't list it here!
