@@ -548,44 +548,27 @@ def wiki(bot: Bot, update: Update):
             update.effective_message.reply_text(f"⚠ Error\n There are too many query! Express it more!\nPossible query result:\n{eet}")
 			
 			
-@run_async
-def covid(bot: Bot, update: Update):
-    message = update.effective_message
-    chat = update.effective_chat
-    country = str(message.text[len(f'/covid '):])
-    if country == '':
-        country = "world"
-    if country.lower() in ["south korea", "korea"]:
-        country = "s. korea"
-    try:
-        c_case = covid.get_status_by_country_name(country)
-    except Exception:
-        message.reply_text(tld(chat.id, "misc_covid_error"))
-        return
-    active = format_integer(c_case["active"])
-    confirmed = format_integer(c_case["confirmed"])
-    country = c_case["country"]
-    critical = format_integer(c_case["critical"])
-    deaths = format_integer(c_case["deaths"])
-    new_cases = format_integer(c_case["new_cases"])
-    new_deaths = format_integer(c_case["new_deaths"])
-    recovered = format_integer(c_case["recovered"])
-    total_tests = c_case["total_tests"]
-    if total_tests == 0:
-        total_tests = "N/A"
+@run_aync(outgoing=True, pattern="^!covid (.*)")
+async def corona(event):
+    await event.edit("`Processing...`")
+    country = event.pattern_match.group(1)
+    covid = Covid()
+    country_data = covid.get_status_by_country_name(country)
+    deaths = covid.get_total_deaths()
+    if country_data:
+        output_text =  f"`Confirmed`   :   {country_data['confirmed']}\n"
+        output_text += f"`Active`          :   {country_data['active']}\n"
+        output_text += f"`Deaths`          :   {country_data['deaths']}\n"
+        output_text += f"`Recovered`   :   {country_data['recovered']}\n\n"        
+        output_text += f"---------TOTAL----------\n\n"                
+        output_text += f"`Deaths`          :   {covid.get_total_deaths()}\n"
+        output_text += f"`Recovered`   :   {covid.get_total_recovered()}\n"
+        output_text += f"`Confirmed`   :   {covid.get_total_confirmed_cases()}\n"
+        output_text += f"`Active`          :   {covid.get_total_active_cases()}\n\n"
+        output_text += ("`Update`        :  "f"{datetime.utcfromtimestamp(country_data['last_update'] // 1000).strftime('%H:%M')}[GMT]\n")
     else:
-        total_tests = format_integer(c_case["total_tests"])
-    reply = tld(chat.id,
-                "misc_covid").format(country, confirmed, new_cases, active,
-                                     critical, deaths, new_deaths, recovered,
-                                     total_tests)
-    message.reply_markdown(reply)
-
-
-def format_integer(number, thousand_separator=','):
-    def reverse(string):
-        string = "".join(reversed(string))
-        return string
+        output_text = "Invalid Country name"
+    await event.edit(f"Corona Virus Info in {country}:\n\n{output_text}")
 			
 
 
