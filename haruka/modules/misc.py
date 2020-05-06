@@ -553,7 +553,6 @@ def covid(bot: Bot, update: Update):
     message = update.effective_message
     chat = update.effective_chat
     country = str(message.text[len(f'/covid '):])
-    await event.edit("`Processing...`")
     country = event.pattern_match.group(1)
     covid = Covid()
     country_data = covid.get_status_by_country_name(country)
