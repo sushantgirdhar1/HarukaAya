@@ -1,15 +1,17 @@
 Dear anyone kanging my bot, At least, Don't fucking spam my private messages least. I'm tired of people copying my works and think it's so funny to do that.
 
-# Haruka Aya
+# EBRUISER
 
 A modular Telegram Python bot running on python3 with an sqlalchemy database.
 
-Can be found on telegram as [Haruka Aya](https://t.me/HarukaAyaBot).
+Can be found on telegram as [EBRUISER-BOT](https://t.me/ebruiserbot).
 
-Alternatively, [find me on telegram](https://t.me/RealAkito)! (Keep all support questions in the support chat, where more people can help you.)
+Alternatively, [find me on telegram](https://t.me/sushantgirdhar)!
 
-You can also join our support group [here!](https://t.me/HarukaAyaBot)
-(Keep in the mind that we does not support any fork of Haruka Aya.)
+Original Project by RealAkito [here!](https://t.me/HarukaAyaGroup)
+
+(Keep in the mind that he does not support any fork of Haruka Aya and ebruiser bot Also )
+
 ## Thanks to
 
 * MrYacha - For pYanaBot :3
