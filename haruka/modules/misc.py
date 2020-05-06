@@ -9,11 +9,11 @@ import re
 from pyowm import timeutils, exceptions
 from datetime import datetime
 from typing import Optional, List
-from covid import Covid
 from pythonping import ping as ping3
 from typing import Optional, List
 from PyLyrics import *
 from hurry.filesize import size
+from covid import Covid
 
 import requests
 from telegram import Message, Chat, Update, Bot, MessageEntity
@@ -37,6 +37,8 @@ from haruka.modules.sql.translation import prev_locale
 from haruka.modules.translations.strings import tld
 
 from requests import get
+cvid = Covid(source="worldometers")
+
 
 
 @user_is_gbanned
