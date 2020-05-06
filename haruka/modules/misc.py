@@ -548,8 +548,11 @@ def wiki(bot: Bot, update: Update):
             update.effective_message.reply_text(f"⚠ Error\n There are too many query! Express it more!\nPossible query result:\n{eet}")
 			
 			
-@run_async(outgoing=True, pattern="^!covid (.*)")
-async def corona(event):
+@run_async
+def covid(bot: Bot, update: Update):
+    message = update.effective_message
+    chat = update.effective_chat
+    country = str(message.text[len(f'/covid '):])
     await event.edit("`Processing...`")
     country = event.pattern_match.group(1)
     covid = Covid()
