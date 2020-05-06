@@ -37,7 +37,7 @@ from haruka.modules.sql.translation import prev_locale
 from haruka.modules.translations.strings import tld
 
 from requests import get
-cvid = Covid(source="worldometers")
+covid = Covid(source="worldometers")
 
 
 
@@ -557,7 +557,7 @@ def covid(bot: Bot, update: Update):
     if country.lower() in ["south korea", "korea"]:
         country = "s. korea"
     try:
-        c_case = cvid.get_status_by_country_name(country)
+        c_case = covid.get_status_by_country_name(country)
     except Exception:
         message.reply_text(tld(chat.id, "misc_covid_error"))
         return
