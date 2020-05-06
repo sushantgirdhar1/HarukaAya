@@ -570,7 +570,7 @@ def covid(bot: Bot, update: Update):
         output_text += ("`Update`        :  "f"{datetime.utcfromtimestamp(country_data['last_update'] // 1000).strftime('%H:%M')}[GMT]\n")
     else:
         output_text = "Invalid Country name"
-    await event.edit(f"Corona Virus Info in {country}:\n\n{output_text}")
+    
 			
 
 
