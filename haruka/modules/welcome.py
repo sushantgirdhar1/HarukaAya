@@ -113,16 +113,7 @@ def new_member(bot: Bot, update: Update):
                     "I have been added to {} with ID: <pre>{}</pre>".format(chat.title, chat.id),
                     parse_mode=ParseMode.HTML
                 )
-            # Check if group not Poco
-            elif new_mem.id == bot.id:
-                #Allowed chats
-                a_chats = ['-1001465818346', '-1001201077095', '-1001221038411', '-1001237412864', '-1001429094228', '-1001367161065', '-1001423695143', '-1001326279590', '-1001326279590']
-                if str(chat.id) in a_chats:
-                    update.effective_message.reply_text("Hello !! Thanks For Adding ! you can inbox @ebruiser for help setting up the bot . kek")
-                else:
-                    update.effective_message.reply_text("This Chat is not Authorized by My Master.Contact him here to get authorization @sushantgirdhar. ")
-                    bot.send_sticker(chat.id, 'CAACAgUAAx0CV16c6gACAwleqo1o4IwxMoFvUoAKepdkk-Id0QACfAEAAlHU8jNUYCseRVdVpxkE')
-                    bot.leaveChat(chat.id)
+                bot.send_message(chat.id, "Thanks for adding me into your group! Don't forgot to checkout our news channel!")
 
             else:
                 # If welcome message is media, send with appropriate function
