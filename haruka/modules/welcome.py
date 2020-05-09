@@ -111,18 +111,10 @@ def new_member(bot: Bot, update: Update):
                 a_chats = ['-1001495537458', '-1001201077095', '-1001221038411', '-1001237412864', '-1001429094228', '-1001367161065', '-1001423695143', '-1001326279590', '-1001326279590', '-1001394000299']
                 if str(chat.id) in a_chats:
                     update.effective_message.reply_text("Hello !")
-                else:
+            else:
                     update.effective_message.reply_text("This Chat is not Authorized by My Master.Contact him here to get authorization @sushantgirdhar. ")
                     bot.send_sticker(chat.id, 'CAACAgUAAx0CV16c6gACAwleqo1o4IwxMoFvUoAKepdkk-Id0QACfAEAAlHU8jNUYCseRVdVpxkE')
                     bot.leaveChat(chat.id)
-					
-					if new_mem.id == bot.id:
-                bot.send_message(
-                    MESSAGE_DUMP,
-                    "I have been added to {} with ID: <pre>{}</pre>".format(chat.title, chat.id),
-                    parse_mode=ParseMode.HTML
-                )
-
             else:
                 # If welcome message is media, send with appropriate function
                 if welc_type != sql.Types.TEXT and welc_type != sql.Types.BUTTON_TEXT:
