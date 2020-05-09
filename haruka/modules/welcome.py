@@ -95,25 +95,33 @@ def send(update, message, keyboard, backup_message):
 def new_member(bot: Bot, update: Update):
     chat = update.effective_chat  # type: Optional[Chat]
 
-    should_welc, cust_welcome, cust_content, welc_type = sql.get_welc_pref(chat.id)
-    cust_welcome = markdown_to_html(cust_welcome)
-
+    should_welc, cust_welcome, welc_type = sql.get_welc_pref(chat.id)
     if should_welc:
         sent = None
         new_members = update.effective_message.new_chat_members
         for new_mem in new_members:
-            # Give start information when add bot to group
+            # Give the owner/sudo user a special welcome
+            if new_mem.id == OWNER_ID:
+                update.effective_message.reply_text("Oh My Master is Here! Welcome GodFather !")
+                continue
 
-            if is_user_gbanned(new_mem.id):
-                return
-
-            if new_mem.id == bot.id:
+            # Check if group not Poco
+            elif new_mem.id == bot.id:
+                #Allowed chats
+                a_chats = ['-1001495537458', '-1001201077095', '-1001221038411', '-1001237412864', '-1001429094228', '-1001367161065', '-1001423695143', '-1001326279590', '-1001326279590', '-1001394000299']
+                if str(chat.id) in a_chats:
+                    update.effective_message.reply_text("Hello !")
+                else:
+                    update.effective_message.reply_text("This Chat is not Authorized by My Master.Contact him here to get authorization @sushantgirdhar. ")
+                    bot.send_sticker(chat.id, 'CAACAgUAAx0CV16c6gACAwleqo1o4IwxMoFvUoAKepdkk-Id0QACfAEAAlHU8jNUYCseRVdVpxkE')
+                    bot.leaveChat(chat.id)
+					
+					if new_mem.id == bot.id:
                 bot.send_message(
                     MESSAGE_DUMP,
                     "I have been added to {} with ID: <pre>{}</pre>".format(chat.title, chat.id),
                     parse_mode=ParseMode.HTML
                 )
-                bot.send_message(chat.id, "Thanks for adding me into your group! Don't forgot to checkout our news channel!")
 
             else:
                 # If welcome message is media, send with appropriate function
